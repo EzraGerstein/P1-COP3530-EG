@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.24)
 project(Project1)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -20,7 +20,9 @@ FetchContent_MakeAvailable(Catch2)
 include_directories(src)
 
 add_executable(Main
-        src/main.cpp # your main file
+        src/main.cpp
+        src/AVLtree.cpp
+        src/AVLtree.h # your main file
         # add your own header files below - should be automatically added in CLion
         # example (can also separate with newlines):
         # src/AVL.h src/AVL.cpp
@@ -29,6 +31,8 @@ add_executable(Main
 # These tests can use the Catch2-provided main
 add_executable(Tests
         test/test.cpp # your test file
+        src/AVLTree.h
+        src/AVLTree.cpp
         # add your own header files below - should be automatically added in CLion
         # example (can also separate with newlines):
         # src/AVL.h src/AVL.cpp
@@ -38,6 +42,6 @@ target_link_libraries(Tests PRIVATE Catch2::Catch2WithMain) #link catch to test.
 # the name here must match that of your testing executable (the one that has test.cpp)
 
 # comment everything below out if you are using CLion
-include(CTest)
-include(Catch)
-catch_discover_tests(Tests) # must be named the same as your test executable
+#include(CTest)
+#include(Catch)
+#catch_discover_tests(Tests) # must be named the same as your test executable
