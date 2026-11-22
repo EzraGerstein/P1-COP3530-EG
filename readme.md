@@ -1,5 +1,5 @@
 # P1-COP3530-EG
-This was a project in COP3530 Data Structures and Algorithms at University of Florida. The assignment as to create a Binary Search Tree AVL Variant. The project requirements are listed below:
+This was a project in COP3530 Data Structures and Algorithms at University of Florida. The assignment was to create a Binary Search Tree AVL Variant. The project requirements are listed below:
 
 # Gator AVL Tree Project
 
